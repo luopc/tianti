@@ -1,26 +1,47 @@
 # 天梯（tianti）
 
-  简介：<br>
+  天梯简介：<br>
   
     1、天梯是一款使用Java编写的免费的轻量级CMS系统，目前提供了从后台管理到前端展现的整体解决方案。
     2、用户可以不编写一句代码，就制作出一个默认风格的CMS站点。
-    3、前端页面自适应，支持PC和H5端，采用前后端分离的机制实现。
-    4、项目技术分层明显，用户可以根据自己的业务模块进行相应地扩展。
-    5、用户可以选择后台样式，目前拥有天梯蓝和天梯红两种皮肤。皮肤偏清新风格。
-    6、目前提供的前端页面风格是天梯默认版本的，如果有定制化的业务需求可以加我微信(zhexuzhe)细聊。
-    
-  互动：<br>
-  
-    1、如果您在使用过程中遇到问题，可以通过以下方式进行互动：邮箱：xuzhexu@139.com或qq交流群：422039518。
-    2、如果有商务合作，可加作者微信：zhexuzhe，注明来源。
-    3、天梯的版权属于开源作者，如果有需要对天梯进行二次开发的培训服务可以加我微信(zhexuzhe)详聊。
-    4、如果您觉得作者的开源天梯系统能帮助到您，您可以打赏作者一瓶汽水，并且留言。您的鼓励是我们前行的动力。微信昵称：许哲。
-    5、捐赠时请加我（zhexuzhe）为好友（提供捐赠名称及金额），优先提供技术支持，谢谢！( ^_^ )
-   ![image](https://raw.githubusercontent.com/xujeff/tianti/master/screenshots/tianti_dashang_erweima.png)  
-    
+    3、前端页面自适应，支持PC和H5端，采用前后端分离的机制实现。后端支持天梯蓝和天梯红换肤功能。
+    4、项目技术分层明显，用户可以根据自己的业务模块进行相应地扩展，很方便二次开发。
+    5、 如果您在使用过程中遇到问题，可以通过以下方式获取更多的文档和资料。<br>
+      5.1、天梯官方交流群：422039518，也可以扫描下面二维码加入公众号（javaTianti）。<br>
+      5.2、VIP服务：https://zb.oschina.net/service/2eaaa401776fd84a  VIP群：614642505
+  ![image](https://raw.githubusercontent.com/xujeff/tianti/master/screenshots/tianti_gongzhonghao.png)  <br>
+  ![image](https://raw.githubusercontent.com/xujeff/tianti/master/screenshots/tiantiframework.png)  <br>
+  
   技术架构：<br>
   
-     1、技术选型：Spring Data JPA、Hibernate、Shiro、 Spring MVC、Layer、Mysql等。
+     1、技术选型：
+        后端
+         ·核心框架：Spring Framework 4.2.5.RELEASE
+         ·安全框架：Apache Shiro 1.3.2
+         ·视图框架：Spring MVC 4.2.5.RELEASE
+         ·数据库连接池：Tomcat JDBC
+         ·缓存框架：Ehcache 
+         ·ORM框架：Spring Data JPA、hibernate 4.3.5.Final
+         ·日志管理：SLF4J 1.7.21、Log4j
+         ·编辑器：ueditor
+         ·工具类：Apache Commons、Jackson 2.8.5、POI 3.15
+         ·view层：JSP
+         ·数据库：mysql、oracle等关系型数据库
+
+        前端
+         ·dom : Jquery
+         ·分页 : jquery.pagination
+         ·UI管理 : common
+         ·UI集成 : uiExtend
+         ·滚动条 : jquery.nicescroll.min.js
+         ·图表 ： highcharts
+         ·3D图表 ：highcharts-more
+         ·轮播图 ： jquery-swipe
+         ·表单提交 ：jquery.form
+         ·文件上传 ：jquery.uploadify
+         ·表单验证 ：jquery.validator
+         ·展现树 ：jquery.ztree
+         ·html模版引擎 ：template
      2、项目结构：
        2.1、tianti-common：系统基础服务抽象，包括entity、dao和service的基础抽象；
        2.2、tianti-org：用户权限模块服务实现；
@@ -38,8 +59,7 @@
       3.6、采用前后端分离机制获取数据，在/src/main/webapp/static/js/config.js文件里分别配置接口地址和后台项目地址;
       3.7、前台项目可以直接部署到Nginx访问，也可以跑tianti-module-gateway应用。
       3.8、如果是tomcat跑前端应用，访问路径为http://ip:端口/tianti-module-gateway/tianti/index/index.html。
-      
-  ![image](https://raw.githubusercontent.com/xujeff/tianti/master/screenshots/tiantiframework.png)   
+        
   
   前端项目概览：<br>
      PC：<br>
